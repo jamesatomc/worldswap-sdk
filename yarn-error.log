@@ -1,0 +1,78 @@
+Arguments: 
+  /home/james/.nvm/versions/node/v16.13.1/bin/node /home/james/.nvm/versions/node/v16.13.1/bin/yarn start
+
+PATH: 
+  /home/james/.nvm/versions/node/v16.13.1/bin:/home/james/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/james/Desktop/world-sdk/package.json: Unexpected token , in JSON at position 91
+      at JSON.parse (<anonymous>)
+      at /home/james/.nvm/versions/node/v16.13.1/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/james/.nvm/versions/node/v16.13.1/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/james/.nvm/versions/node/v16.13.1/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "world-sdk",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+    },
+    "version": "3.7.1",
+    "description": "⚒️ An SDK for building applications on top of Uniswap V3",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "files": [
+      "dist"
+    ],
+    "repository": "https://github.com/Uniswap/uniswap-v3-sdk.git",
+    "keywords": [
+      "uniswap",
+      "ethereum"
+    ],
+    "module": "dist/v3-sdk.esm.js",
+    "scripts": {
+      "build": "tsdx build",
+      "start": "tsdx watch",
+      "test": "tsdx test",
+      "prepublishOnly": "tsdx build"
+    },
+    "dependencies": {
+      "@ethersproject/abi": "^5.0.12",
+      "@ethersproject/solidity": "^5.0.9",
+      "@uniswap/sdk-core": "^3.0.1",
+      "@uniswap/v3-periphery": "^1.1.1",
+      "@uniswap/v3-staker": "1.0.0",
+      "tiny-invariant": "^1.1.0",
+      "tiny-warning": "^1.0.3"
+    },
+    "devDependencies": {
+      "@types/jest": "^24.0.25",
+      "@uniswap/v3-core": "1.0.0",
+      "tsdx": "^0.14.1"
+    },
+    "engines": {
+      "node": ">=10"
+    },
+    "prettier": {
+      "printWidth": 120,
+      "semi": false,
+      "singleQuote": true
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
